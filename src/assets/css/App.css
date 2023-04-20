@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+
+body{
+    position: relative;
+    min-height: 100vh;
+    font-family: "Montserrat";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1900' height='1300' preserveAspectRatio='none' viewBox='0 0 1900 1300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1041%26quot%3b)' fill='none'%3e%3crect width='1900' height='1300' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M731.18 1352.56C1031.12 1222.81 1059.07 305.56 1481.91 282.42 1904.76 259.28 2031.87 563.63 2232.65 568.42' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M433.23 1407.74C718.18 1305.44 782.48 465.39 1182.39 456.27 1582.31 447.15 1720.72 834.82 1931.56 846.27' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M565.52 1541.88C771.84 1537.71 901.94 1289.37 1342.5 1263.26 1783.07 1237.15 1881.84 732.29 2119.49 704.26' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M543.86 1458.8C795.23 1414.96 924.23 793.4 1316.86 792.31 1709.48 791.22 1873.67 1171.47 2089.85 1182.31' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M335.86 1445.64C596.73 1429.78 732.92 976.92 1253.99 945.71 1775.06 914.5 1911.92 467.06 2172.12 451.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1041'%3e%3crect width='1900' height='1300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+.App {
+    text-align: center;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.weather{
+    color: #3e63a7;
+    padding: 0.2rem;
+}
+
+.input-group {
+    width: 60%;
+}
+
+.card {
+    margin-top: 5rem;
+    max-width: 75%;
+}
+
+.card-title{
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    padding: 1rem;
+}
+
+.card-date{
+    position: absolute;
+    padding-left: 1rem;
+    margin-top: 3.5rem;
+}
+
+.card-temp{
+    font-size: 3rem;
+    position: absolute;
+    padding-left: 1rem;
+    margin-top: 17rem;
+}
+.card-description{
+    position: absolute;
+    padding-left: 0.5rem;
+    margin-top: 20rem; 
+}
+.card-text{
+    font-size: 1.2rem;
+}
+
+.line{
+    background-color: #fff;
+    padding: 0.7px;
+}
+.col{
+    font-size: 1.1rem;
+    margin-top: 2rem ;
+}
+.description{
+    padding-right: 1rem;
+}
+.col p{
+    margin-bottom: 0;
+}
+
+.description{
+    font-size: 1rem;
+}
+.temp{
+    font-size: 1.5rem;
+}
+
+.text-light h2 {
+    font-size: 2.5rem;
+}
+.about{
+    height: 80vh;
+}
+.footer{
+    display: grid;
+    justify-items: center;
+    background-color: #212529;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 18vh;
+      }
+
+.social{
+    margin-top: 3rem;
+    width: 5rem;
+    padding: 1rem;
+}
+.develope-by{
+    color: #fff;
+    font-size: 0.9rem;
+}
+.my-name{
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
