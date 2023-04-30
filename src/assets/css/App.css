@@ -24,7 +24,7 @@ body{
 
 .card {
     margin-top: 5rem;
-    max-width: 75%;
+    max-width: 60%;
 }
 
 .card-title{
@@ -41,13 +41,14 @@ body{
 }
 
 .card-temp{
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     padding-left: 1rem;
-    margin-top: 17rem;
+    margin-top: 18rem;
 }
 .card-description{
     position: absolute;
+    font-size: 1.1rem;
     padding-left: 0.5rem;
     margin-top: 20rem; 
 }
@@ -58,6 +59,9 @@ body{
 .line{
     background-color: #fff;
     padding: 0.7px;
+}
+.temp{
+    font-size: 1.5rem;
 }
 .col{
     font-size: 1.1rem;
@@ -73,16 +77,33 @@ body{
 .description{
     font-size: 1rem;
 }
-.temp{
-    font-size: 1.5rem;
-}
 
 .text-light h2 {
     font-size: 2.5rem;
 }
+
 .about{
-    height: 80vh;
+    height: 70vh;
+    margin-top: 12rem;
+    justify-content: center;
 }
+ .about h2{
+    font-size: 4rem;
+    color: #fff;
+}
+.app{
+    font-weight: 600;
+    display: block;
+    margin-left: 5rem;
+    color: #3e63a7;     
+}
+.about p{
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    max-width: 35rem;
+}
+
 .footer{
     display: grid;
     justify-items: center;
@@ -98,6 +119,12 @@ body{
     width: 5rem;
     padding: 1rem;
 }
+
+.social-outlook{
+    margin-top: 3rem;
+    width: 4.8rem;
+    padding: 1rem ;
+}
 .develope-by{
     color: #fff;
     font-size: 0.9rem;
@@ -106,4 +133,152 @@ body{
     font-style: italic;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+/* Breackpoints devices, tablets and phones */
+
+
+@media (max-width: 1400px){
+    .card{
+        max-width: 70%;
+    }
+    .card-date{
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .forecast{
+        font-size: 0.8rem;
+        margin-top: 0.6rem;
+    }
+    .forecast img{
+        width: 35px;
+    }
+    
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-date{
+        margin-top: 2.8rem;
+    }
+    .temp{
+        font-size: 1rem;
+    }
+    .card-temp{
+        font-size: 1.9rem;
+        padding-left: 1rem;
+        margin-top: 15rem;
+    }
+    .card-description{
+        margin-top: 17rem; 
+    }
+}
+
+
+
+@media (max-width: 990px){
+    .card {
+        margin-top: 5rem;
+        max-width:90%;
+    }
+    .card-title{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    
+    .card-date{
+        padding-left: 0.5rem;
+        margin-top: 1.9rem;
+    }
+    
+    .card-temp{
+        font-size: 1.9rem;
+        margin-top: 14rem;
+    }
+    .card-description{
+        font-size: 0.8rem;
+        margin-top: 16rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .forecast{
+        margin-top: 0;
+    }
+    .forecast p{
+        font-size: 0.rem;
+        margin-top: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .temp{
+        font-size: 0.6rem;
+    }
+    .about{
+        height: 100vh;
+    }
+    .about h2{  
+        font-size:3rem;
+    }
+    .app{
+        margin-left: 0;     
+    }
+    .about p{
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        color: #fff;
+        max-width: 25rem;
+        margin-bottom: 10rem;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+    
+    .card {
+        margin-top: 5rem;
+        max-width: 65%;
+    }
+    .card-title{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .card-date{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        margin-top: 3.5rem;
+    }
+    
+    .card-temp{
+        font-size: 2.4rem;
+        margin-top: 22rem;
+    }
+    .card-description{
+        font-size: 1rem;
+        margin-top: 24rem;
+    }
+    .card-text{
+        font-size: 0.9rem;
+    }
+    .forecast p{
+        font-size: 0.8rem;
+        padding: 0.5rem;
+
+    }
+}
+
+@media (max-width: 458px) {
+    .input-group {
+        width: 90%;
+    }
+    
+    .card {
+        margin-top: 3rem;
+        max-width: 95%;
+    }
 }

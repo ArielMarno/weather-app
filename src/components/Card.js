@@ -54,29 +54,29 @@ const Card = ({ loadingData, showData, weather, forecast }) => {
                                     <p className="card-date">{date}</p>
                                     <h1 className="card-temp">{(weather.main.temp - 273.15).toFixed(1)}°C</h1>
                                     <p className="card-description"><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
-                                    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1600" className="img-fluid rounded-start" alt="..."/>
+                                    <img src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-fluid rounded-start" alt="..."/>
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body text-start mt-2">
-                                    <h5 className="card-text">Temperatura Maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C</h5>
-                                    <h5 className="card-text">Temperatura Minima: {(weather.main.temp_min - 273.15).toFixed(1)}°C</h5>
-                                    <h5 className="card-text">Sensacion Térmica: {(weather.main.feels_like - 273.15).toFixed(1)}°C</h5>
-                                    <h5 className="card-text">Humedad: {weather.main.humidity}%</h5>
-                                    <h5 className="card-text">Velocidad del viento: {weather.wind.speed}m/s</h5>
+                                        <h5 className="card-text">Temperatura Maxima: {(weather.main.temp_max - 273.15).toFixed(1)}°C</h5>
+                                        <h5 className="card-text">Temperatura Minima: {(weather.main.temp_min - 273.15).toFixed(1)}°C</h5>
+                                        <h5 className="card-text">Sensacion Térmica: {(weather.main.feels_like - 273.15).toFixed(1)}°C</h5>
+                                        <h5 className="card-text">Humedad: {weather.main.humidity}%</h5>
+                                        <h5 className="card-text">Velocidad del viento: {weather.wind.speed}m/s</h5>
                                     </div>
-                                <div className="line"></div>
+                                    <div className="line"></div>
                                     <div className="row mt-2">
-                                        <div className="col">
+                                        <div className="forecast col">
                                             <p>{forecastDate3}h</p>
                                             <p className="description"><img src={iconUrl3} alt="icon"/>{forecast.list[1].weather[0].description}</p>
                                             <p className="temp">{(forecast.list[1].main.temp - 273.15).toFixed(1)}°C</p>
                                         </div>
-                                        <div className="col">
+                                        <div className="forecast col">
                                             <p>{forecastDate6}h</p>
                                             <p className="description"><img src={iconUrl6} alt="icon"/>{forecast.list[2].weather[0].description}</p>
                                             <p className="temp">{(forecast.list[2].main.temp - 273.15).toFixed(1)}°C</p>
                                         </div>
-                                        <div className="col">
+                                        <div className="forecast col">
                                             <p>{forecastDate9}h</p>
                                             <p className="description"><img src={iconUrl9} alt="icon"/>{forecast.list[3].weather[0].description}</p>
                                             <p className="temp">{(forecast.list[3].main.temp - 273.15).toFixed(1)}°C</p>
