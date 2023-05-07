@@ -2,36 +2,46 @@ import Spinner from "./Spinner";
 
 const Card = ({ loadingData, showData, weather, forecast }) => {
 
+    // Get the current date and format it as day/month/year
     var today = new Date();
     var day = today.getDate();
     var month = today.getMonth() + 1;
     var year = today.getFullYear();
     var date = day + "/" + month + "/" + year;
 
+    // Initialize variables for the URLs of the weather icons
     var url = "";
     var iconUrl = "";
 
+    // Initialize variables for the URLs of the forecast icons
     var iconUrl3 = "";
     var iconUrl6 = "";
     var iconUrl9 = "";
 
+    // Initialize variables for the dates of the forecast
     var forecastDate3 = "";
     var forecastDate6 = "";
     var forecastDate9 = "";
+
 
     if (loadingData) {
         return <Spinner />;
     }
 
+    // If data is ready to be shown
+
     if(showData){
 
+        // Set the URL for the current weather icon
         url = "http://openweathermap.org/img/w/";
         iconUrl = url + weather.weather[0].icon + ".png";
 
+        // Set the URLs for the forecast icons
         iconUrl3 = url + forecast.list[1].weather[0].icon + ".png";
         iconUrl6 = url + forecast.list[2].weather[0].icon + ".png";
         iconUrl9 = url + forecast.list[3].weather[0].icon + ".png";
 
+        // Format and set the dates for the forecast
         forecastDate3 = forecast.list[1].dt_txt.substring(8, 10) + '/' + forecast.list[1].dt_txt.substring(5, 7) + '/' + forecast.list[1].dt_txt.substring(0, 4) + ' ' + forecast.list[1].dt_txt.substring(11, 13);
 
         forecastDate6 = forecast.list[2].dt_txt.substring(8, 10) + '/' + forecast.list[2].dt_txt.substring(5, 7) + '/' + forecast.list[2].dt_txt.substring(0, 4) + ' ' + forecast.list[2].dt_txt.substring(11, 13);
@@ -54,7 +64,7 @@ const Card = ({ loadingData, showData, weather, forecast }) => {
                                     <p className="card-date">{date}</p>
                                     <h1 className="card-temp">{(weather.main.temp - 273.15).toFixed(1)}°C</h1>
                                     <p className="card-description"><img src={iconUrl} alt="icon"/>{weather.weather[0].description}</p>
-                                    <img src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-fluid rounded-start" alt="..."/>
+                                    <img src="https://images.pexels.com/photos/10039922/pexels-photo-10039922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="img-fluid rounded-start" alt="otoño"/>
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body text-start mt-2">
