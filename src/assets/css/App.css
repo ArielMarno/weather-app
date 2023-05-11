@@ -281,4 +281,7 @@ body{
         margin-top: 3rem;
         max-width: 95%;
     }
+    .footer{
+        max-width: 100%;
+    }
 }
