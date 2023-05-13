@@ -4,10 +4,16 @@ body{
     position: relative;
     min-height: 100vh;
     font-family: "Montserrat";
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1900' height='1300' preserveAspectRatio='none' viewBox='0 0 1900 1300'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1041%26quot%3b)' fill='none'%3e%3crect width='1900' height='1300' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M731.18 1352.56C1031.12 1222.81 1059.07 305.56 1481.91 282.42 1904.76 259.28 2031.87 563.63 2232.65 568.42' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M433.23 1407.74C718.18 1305.44 782.48 465.39 1182.39 456.27 1582.31 447.15 1720.72 834.82 1931.56 846.27' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M565.52 1541.88C771.84 1537.71 901.94 1289.37 1342.5 1263.26 1783.07 1237.15 1881.84 732.29 2119.49 704.26' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M543.86 1458.8C795.23 1414.96 924.23 793.4 1316.86 792.31 1709.48 791.22 1873.67 1171.47 2089.85 1182.31' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M335.86 1445.64C596.73 1429.78 732.92 976.92 1253.99 945.71 1775.06 914.5 1911.92 467.06 2172.12 451.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1041'%3e%3crect width='1900' height='1300' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1900' height='1900' preserveAspectRatio='none' viewBox='0 0 1900 1900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1038%26quot%3b)' fill='none'%3e%3crect width='1900' height='1900' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M -350.64598366304745%2c279 C -160.65%2c509 219.35%2c1312 599.3540163369526%2c1429 C 979.35%2c1546 1169.35%2c850.8 1549.3540163369526%2c864 C 1929.35%2c877.2 2429.22%2c1543.2 2499.3540163369526%2c1495 C 2569.48%2c1446.8 2019.87%2c797.4 1900%2c623' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -21.43024458771049%2c526 C 168.57%2c695.4 548.57%2c1410.2 928.5697554122895%2c1373 C 1308.57%2c1335.8 1498.57%2c422.6 1878.5697554122894%2c340 C 2258.57%2c257.4 2824.28%2c854.4 2828.5697554122894%2c960 C 2832.86%2c1065.6 2085.71%2c886.4 1900%2c868' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -997.6301785451585%2c447 C -807.63%2c614.6 -427.63%2c1235 -47.630178545158465%2c1285 C 332.37%2c1335 522.37%2c749.4 902.3698214548415%2c697 C 1282.37%2c644.6 1652.84%2c978.8 1852.3698214548415%2c1023 C 2051.9%2c1067.2 1890.47%2c939 1900%2c918' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1038'%3e%3crect width='1900' height='1900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 .App {
     text-align: center;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 .navbar-brand {
     font-size: 1.5rem;
@@ -17,8 +23,14 @@ body{
     color: #3e63a7;
     padding: 0.2rem;
 }
+.logo{
+    width: 45px;
+    padding-left: 0.5rem;
+}
 
 .input-group {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
     width: 60%;
 }
 
@@ -28,22 +40,23 @@ body{
 }
 
 .card-title{
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 600;
     position: absolute;
-    padding: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
 }
 
 .card-date{
     position: absolute;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     margin-top: 3.5rem;
 }
 
 .card-temp{
     font-size: 2rem;
     position: absolute;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     margin-top: 18rem;
 }
 .card-description{
@@ -83,8 +96,8 @@ body{
 }
 
 .about{
-    height: 70vh;
-    margin-top: 12rem;
+    height: 65vh;
+    margin-top: 10rem;
     justify-content: center;
 }
  .about h2{
@@ -94,8 +107,11 @@ body{
 .app{
     font-weight: 600;
     display: block;
-    margin-left: 5rem;
+    margin-left: 2rem;
     color: #3e63a7;     
+}
+.about img{
+    width: 100px;
 }
 .about p{
     font-size: 1.3rem;
@@ -109,10 +125,9 @@ body{
     justify-items: center;
     background-color: #212529;
     position: absolute;
-    bottom: 0;
     width: 100%;
     min-height: 18vh;
-      }
+}
 
 .social{
     margin-top: 3rem;
@@ -175,6 +190,7 @@ body{
     .card-description{
         margin-top: 17rem; 
     }
+    
 }
 
 
@@ -223,6 +239,10 @@ body{
     .about h2{  
         font-size:3rem;
     }
+    .about img{
+        width: 80px;
+    }
+
     .app{
         margin-left: 0;     
     }
@@ -231,7 +251,6 @@ body{
         letter-spacing: 0.1rem;
         color: #fff;
         max-width: 25rem;
-        margin-bottom: 10rem;
     }
 
 }
@@ -245,7 +264,7 @@ body{
         max-width: 65%;
     }
     .card-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem;
     }
     .card-date{
@@ -280,6 +299,15 @@ body{
     .card {
         margin-top: 3rem;
         max-width: 95%;
+    }
+    
+    .card-temp{
+        font-size: 2.5rem;
+        margin-top: 25rem;
+    }
+    .card-description{
+        font-size: 2rem;
+        margin-top: 28rem;
     }
     .footer{
         max-width: 100%;

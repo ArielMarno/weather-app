@@ -62,11 +62,10 @@ const WeatherPanel = () =>{
 
     return(
 
-        <React.Fragment className="Panel">
+        <React.Fragment>
             
             <Form newLocation = {getLocation}/>
-            <Card showData={show} loadingData={loading} weather={weather} forecast={forecast}
-                />
+            <Card showData={show} loadingData={loading} weather={weather} forecast={forecast}/>
 
         </React.Fragment>
 
