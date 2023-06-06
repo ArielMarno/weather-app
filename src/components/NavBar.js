@@ -1,9 +1,9 @@
-import logo from "../assets/weather-logo.png"
+
 const NavBar = ()=>{
     return(
       <nav className="navbar bg-dark navbar-expand-lg mb-4" data-bs-theme="dark">
       <div className="container-fluid">
-        <h2 className="navbar-brand mt-1"><span className="weather">Weather</span>App<img src={logo} alt="logo WeatherApp" className="logo"/></h2>
+        <h2 className="navbar-brand mt-1"><span className="weather">Weather</span>App</h2>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
