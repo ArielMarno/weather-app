@@ -1,4 +1,4 @@
- import '../assets/css/Spinner.css';
+ import '../css/Spinner.css';
  const Spinner = () =>{
     return(
         <div className="lds-ripple">

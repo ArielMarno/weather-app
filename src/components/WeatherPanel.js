@@ -4,26 +4,26 @@ import Card from "./Card";
 
 const WeatherPanel = () =>{
 
-    // Define base URLs for weather and forecast API calls
+    // Define URLS para las llamadas a la API 
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=594c251384889ff2774449fd93be23e5&lang=es";
     let cityURL = "&q=";
 
     let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?appid=594c251384889ff2774449fd93be23e5&lang=es";
 
-    // Define state variables for weather, forecast, loading status, show status, and location
+    // Define variables de estado para el clima actual, pronostico, estado de carga, mostrar estado y ubicacion
     const [weather, setWeather] = useState([]);
     const [forecast, setForecast] = useState([]);
     const [loading, setLoading] = useState(false);
     const [show, setShow] = useState(false);
     const [location, setLocation] = useState("");
 
-    // Define an asynchronous function to fetch weather and forecast data for a given location
+    // Funcion asincrona para traer datos del clima actual y pronostico de la ubicacion provista por el usuario
     const getLocation = async(loc) => {
         setLoading(true);
         setLocation(loc);
 
         
-        // Construct weather API URL by appending location to base URL
+        // URL de la API agregando la ubicación a la URL base para el clima actual
         weatherURL = weatherURL + cityURL + loc;
 
         await fetch(weatherURL).then((response) =>{
@@ -39,7 +39,7 @@ const WeatherPanel = () =>{
         });
 
 
-        // Construct forecast API URL by appending location to base URL
+        // URL de la API agregando la ubicación a la URL base para el pronostico
         forecastURL = forecastURL + cityURL + loc;
 
         await fetch(forecastURL).then((response) =>{

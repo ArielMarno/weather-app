@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+body{
+    color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    background-color: #1E1E1E;
+}
+.App {
+    text-align: center;
+}
+
+
+/* --------NAVBAR-------- */
+.navbar{
+    background-color: #454545;
+}
+
+.navbar-brand span{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #0085ff;
+}
+.container-fluid a{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navbar-brand img{
+    width: 50px;
+}
+
+.navbar-nav a{
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.contact-icons img{
+    width: 42px;
+    height: auto;
+    padding: 5px;
+}
+
+/* -------FORM INPUT------- */
+
+.form .container{
+    max-width: 700px;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.input-group .btn{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff ;
+    background-color: #0085ff;
+}
+
+.input-group .btn:hover{
+    color: #e0ffff;
+}
+
+/* -------WEATHER DATA------- */
+
+.weather-card{
+    height: 100vh;
+}
+
+.text-light{
+    font-size: 3rem ;
+    font-weight: 100;
+}
+.weather-section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.weather-data{
+    background-color: #2d2d2d;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card-top{
+    background-image: url("https://images.pexels.com/photos/681391/pexels-photo-681391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    min-width: 28rem;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.card-title{
+    font-size: 3rem;
+}
+
+.card-date{
+    font-size: 1.7rem;
+}
+
+.card-temp{
+    font-size: 2.8rem;
+}
+
+.card-description{
+    font-size: 1.8rem;
+}
+
+.card-bottom{
+    padding: 1rem;
+}
+
+.card-text{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.forecast-data{
+    margin-top: 1rem;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.forecast-card{
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: #2d2d2d;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.forecast-card p{
+    font-weight: 400;
+}
+
+.forecast-card img{
+    width: 4.5rem;
+}
+
+.forecast-card .description{
+    font-weight: 400;
+}
+.forecast-card .temp{
+    font-size: 1.5rem;
+}
+
+
+/* -------PIE DE PAGINA-------- */
+
+.footer{
+    margin-top: 25rem;
+    font-size: 1.2rem;
+    height: 18vh;
+    display: grid;
+    align-items: center;
+    background-color: #454545;
+}
+
+.develope-by{
+    margin-top: 1rem;
+}
+.my-name{
+    color:#0085ff;
+    font-weight: 600;
+}
+
+
+/* -----BREACKPOINT----- */
+
+@media only screen and (max-width: 600px) {
+    .forecast-data{
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+
+    }
