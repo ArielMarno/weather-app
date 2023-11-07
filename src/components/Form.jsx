@@ -1,4 +1,6 @@
+import '../css/form.css';
 import React, {useState} from "react";
+import lupa from '../assets/lupa.png';
 
 const Form = ({newLocation}) => {
 
@@ -13,15 +15,11 @@ const Form = ({newLocation}) => {
     }
 
     return(
-        <div className="form">
-            <div className="container">
+        <div>
                 <form onSubmit={onSubmit}>
-                    <div className="input-group">
-                        <input type= "text" className="form-control" placeholder="Ciudad" onChange={(e)=>setCity(e.target.value)}/>
-                        <button className="btn inut-group-text">Buscar</button>
-                    </div>
+                    <button><img src={lupa} alt="" /></button>
+                        <input type= "text" className="form-control" placeholder="Ciudad/Localidad" onChange={(e)=>setCity(e.target.value)}/>
                 </form>
-            </div>
         </div>
     )
 };

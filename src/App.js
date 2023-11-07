@@ -1,12 +1,12 @@
-import NavBar from './components/NavBar';
-import WeatherPanel from './components/WeatherPanel'
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
+import Panel from './components/Panel';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <WeatherPanel />
+      <Panel />
       <Footer />
     </div>
   );

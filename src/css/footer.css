@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.contacto img{
+    width: 38px;
+}
+
+.desarrollador{
+    font-size: 0.8rem;
+}
+
+.desarrollador span{
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 600;
+}
